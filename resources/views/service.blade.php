@@ -12,7 +12,7 @@
         <div class="max-w-7xl max-md:max-w-lg mx-auto">
           <div class="flex items-center justify-between">
             <h2 class="text-3xl font-extrabold text-[#333] uppercase">OUR services</h2>
-          <a  href="/add" class="px-4 py-2.5 text-white text-xl tracking-wider bg-orange-500 ">Create New Service
+          <a  href="/create" class="px-4 py-2.5 text-white text-xl tracking-wider bg-orange-500 ">Create New Service
           </a> 
           </div>
          

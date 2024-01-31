@@ -9,6 +9,7 @@ use App\Models\categoryModel;
 class serviceModel extends Model
 {
     use HasFactory;
+    protected $fillable = ['title', 'desc','cost','email','tel','cat_id'];
 
     public function category() {
         return $this->belongsTo(categoryModel::class, "cat_id", "id");

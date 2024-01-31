@@ -14,4 +14,5 @@ use App\Http\Controllers\serviceController;
 */
 
 Route::get('/', [serviceController::class, 'index'])->name('services.index'); 
-Route::get('/add', [serviceController::class, 'add'])->name('services.add');
+Route::get('/create', [serviceController::class, 'create'])->name('create');
+Route::post('/store', [serviceController::class, 'store'])->name('store');
