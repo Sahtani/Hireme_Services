@@ -18,7 +18,7 @@ class serviceController extends Controller
    }
    public function create(){
       $categories = categoryModel::all();
-    return view('add', ['categories' => $categories]);
+    return view('create', ['categories' => $categories]);
    }
    public function store(Request $request){
    
@@ -37,6 +37,7 @@ class serviceController extends Controller
          'cost' => ['required', 'numeric'],
          'phone' => ['required', 'regex:/^\d{10}$/'],
       ]);
+      
 // Insertion
 ServiceModel::create([
    'title'=>$title,

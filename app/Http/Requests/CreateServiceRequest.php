@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class CreateServiceRequest extends FormRequest
 {
@@ -24,7 +25,7 @@ class CreateServiceRequest extends FormRequest
     public function rules()
     {
         return [
-           
+        // 
         ];
     }
 }
