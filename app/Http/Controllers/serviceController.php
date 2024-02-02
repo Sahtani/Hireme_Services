@@ -31,9 +31,11 @@ class serviceController extends Controller
 
       // validation
       $request->validate([
-         'title'=>'required',
-         'cost'=>'required',
-         'phone'=>'required'
+         'title'=>['required','min:4'],
+         'desc'=>['required','min:8'],
+         'email' => ['required', 'email'],
+         'cost' => ['required', 'numeric'],
+         'phone' => ['required', 'regex:/^\d{10}$/'],
       ]);
 // Insertion
 ServiceModel::create([
